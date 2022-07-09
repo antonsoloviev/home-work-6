@@ -17,19 +17,17 @@ html {
 .header .max-container {
   height: 90px;
   max-width: 1440px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
   margin: 0 auto;
   display: flex;
-  background-color: rgb(241, 241, 241);
   padding: 20px;
   justify-content: center;
+  align-items: center;
   
 }
 
 .header__logo {
-  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  color: black;
   font-weight: bolder;
   letter-spacing: 0.05rem;
   display: flex;
@@ -37,15 +35,24 @@ html {
   gap: 10px;
 }
 
+.header__logo a {
+  color: inherit;
+}
+
+.header__logo a:hover {
+  background: linear-gradient(60deg, #D140F8 33%, #788CE9 66%, #37C2DE, #1ECCAE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .header__nav__list {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   height: 40px;
   color: #666666;
   list-style: none;
   padding-left: 400px;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -53,6 +60,16 @@ html {
   padding-left: 16px;
   padding-right: 16px;
   color: inherit;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.header__nav__list__item:hover {
+  background-color: #2b2b2b;
+  color: white;
+  border-radius: 5px;
 }
 
 .header__nav__list__item a {
@@ -64,6 +81,7 @@ html {
   background: #222;
   padding-left: 30px;
   padding-right: 30px;
+  margin-left: 16px;
   color: white;
   border-radius: 5px;
   font-family: inherit;
@@ -86,7 +104,7 @@ display: flex;
 
 .future .max-container {
   max-width: 1440px;
-  max-height: 500px;
+  max-height: 520px;
   display: flex;
   margin: 0 auto;
   background-color: #fff;
@@ -94,21 +112,19 @@ display: flex;
   margin-bottom: 0px;
   overflow: hidden;
   justify-content: space-around;
-  gap: 220px;
+  gap: 240px;
 
 }
 
 .future__text {
   display: flex;
   flex-direction: column;
-  max-width: 420px;
-  /* margin-left: 100px; */
-  margin-top: 55px;
+  max-width: 400px;
+  margin-top: 75px;
   margin-bottom: 55px;
 }
 
 .future__text__logo {
-  font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: bolder;
   display: flex;
@@ -117,7 +133,7 @@ display: flex;
   gap: 10px;
 }
 
-.future__text__paragraf {
+.future__text__paragraph {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -127,10 +143,16 @@ display: flex;
   padding-top: 15px;
 }
 
-.future__text__paragraf h2{
-  font-family: inherit;
-  font-size: 4rem;
+.future__text__paragraph h2{
+  font-size: 5.4rem;
   font-weight: 400;
+  line-height: 6rem;
+}
+.future__text__paragraph p{
+  padding-top: 15px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
 }
 
 .future__text__buttons {
@@ -166,23 +188,33 @@ display: flex;
 }
 
 .future__img {
-  /* padding-left: 300px; */
+  padding-top: 20px;
+}
+
+.future__img:hover {
+  transform: translateY(-20px);
 }
 
 /* FUTURE end */
 
 /* FEATURES start */
 .features {
+  width: 100%;
+  display: flex;
+  background-color: #222222;
+}
+
+.features .max-container {
   max-width: 1440px;
   display: flex;
   margin: 0 auto;
-  background-color: #222222;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 100px;
   padding-bottom: 100px;
   flex-direction: column;
   align-items: center;
+
 }
 
 .features__title {
@@ -225,12 +257,12 @@ display: flex;
 
 }
 
-.features__container__card-1__img {
+.features__card__img {
   position: relative;
   top: 40px;
 }
 
-.features__container__card-1__bottom {
+.bottom {
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
@@ -241,8 +273,7 @@ display: flex;
 
 }
 
-.features__container__card-1__bottom__button {
-  background-color: #0278ED;
+.features__card__button {
   width: 64px;
   height: 64px;
   display: flex;
@@ -255,15 +286,13 @@ display: flex;
   padding-bottom: 19px;
 }
 
-.features__container__card-1__bottom h3 {
-  font-family: 'Poppins', sans-serif;
+.bottom h3 {
   font-size: 2.4rem;
   font-weight: 400;
-  color: #0278ED;
   padding-top: 48px;
 }
 
-.features__container__card-1__bottom p {
+.bottom p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -275,5 +304,141 @@ display: flex;
 
 }
 
+.card-1-color {
+  color: #0278ED;
+}
+.card-1-bgcolor {
+  background-color: #0278ED;
+}
+.card-2-color {
+  color: #FF5437;
+}
+.card-2-bgcolor {
+  background-color:#FF5437
+}
+.card-3-color {
+  color: #FF9209;
+}
+.card-3-bgcolor {
+  background-color:#FF9209
+}
+.card-4-color {
+  color: #E738CE;
+}
+.card-4-bgcolor {
+  background-color: #E738CE;
+}
+.card-5-color {
+  color: #00C6DF;
+}
+.card-5-bgcolor {
+  background-color: #00C6DF;
+}
+.card-6-color {
+  color: #B25DF8;
+}
+.card-6-bgcolor {
+  background-color: #B25DF8;
+}
+
 /* FEATURES end */
 
+/* FEATURES-ORANGE start */
+
+.features-orange {
+  width: 100%;
+  background-color: #FF5437;
+}
+
+.features-orange .max-container {
+  max-width: 1440px;
+  max-height: 316px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.features-orange__text {
+  text-align: center;
+  color: white;
+
+}
+
+.features-orange__text .text-96px {
+  font-size: 9.6rem;
+}
+.features-orange__text .text-14px {
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+
+/* FEATURES-ORANGE end */
+
+/* TECHNOLOGY start */
+
+.technology {
+  width: 100%;
+  display: flex; 
+  }
+  
+  .technology  .max-container {
+    max-width: 1440px;
+    max-height: 645px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    justify-content: space-around;
+    gap: 240px;
+  
+  }
+  
+  .technology__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 75px;
+    margin-bottom: 55px;
+  }
+
+  .technology__text__paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    align-items: flex-start;
+
+  }
+  
+  .technology__text__paragraph h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+
+  .technology__text__paragraph h4{
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 4rem;
+    padding-top: 15px;
+  }
+  .technology__text__paragraph p{
+    padding-top: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+
+  .technology__img {
+    padding-top: 20px;
+  }
+  
+  .technology__img:hover {
+    transform: translateY(-20px);
+  }
