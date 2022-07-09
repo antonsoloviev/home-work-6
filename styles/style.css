@@ -958,7 +958,8 @@ display: flex;
   width: 64px;
   height: 64px;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
+  cursor: pointer;
 } 
 .beauty-rotate:hover {
   border-radius: 50%;
@@ -980,5 +981,23 @@ display: flex;
 
 .footer__all-rights .grey {
   color: #B1B1B1;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.twitter,
+.instagram,
+.facebook {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.twitter:hover,
+.instagram:hover,
+.facebook:hover
+{
+  transform: scale(1.25);
 }
    /* Footer end */
