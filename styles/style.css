@@ -39,12 +39,11 @@ html {
   color: inherit;
 }
 
-.header__logo a:hover {
+.header__logo:hover {
   background: linear-gradient(60deg, #D140F8 33%, #788CE9 66%, #37C2DE, #1ECCAE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .header__nav__list {
   font-size: 1.5rem;
@@ -969,8 +968,4 @@ display: flex;
 .footer__all-rights .grey {
   color: #B1B1B1;
 }
-
-  
-
-
    /* Footer end */
