@@ -73,6 +73,7 @@ html {
 
 .header__nav__list__item a {
   color: inherit;
+  padding: 16px;
 }
 
 .header__button {
@@ -951,6 +952,18 @@ display: flex;
     align-items: center;
     gap: 10px;
     padding-bottom: 25px;
+}
+
+.beauty-rotate {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+} 
+.beauty-rotate:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .footer__social-networks {
