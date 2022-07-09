@@ -694,7 +694,7 @@ display: flex;
     padding-top: 5px;
     letter-spacing: -6px;
   }
-  
+
   .card-period {
     font-size: 1.4rem;
     padding-top: 0px;
@@ -718,6 +718,100 @@ display: flex;
   }
 
   /* PRICING end */
+
+  /* Testimonials start */
+  .testimonials {
+    width: 100%;
+    display: flex;
+    background-color: #F2F2F2;
+  }
+  
+  .testimonials .max-container {
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .testimonials__title {
+    color: #222222;
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 575px;
+  }
+  
+  .testimonials__title h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .testimonials__title h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: 400;
+
+  }
+
+  .testimonials__title p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .testimonials__container {
+    max-width: 1440px;
+    display: flex;
+    padding-left: 135px;
+    padding-right: 135px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .testimonials__container > div {
+    width: 380px;
+    height: 224px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .testimonials__card__text {
+    width: 312px;
+    font-size: 1.6rem;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .user-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    gap: 10px;
+  }
+
+  .user-name {
+    font-size: 1.6rem;
+  }
+
+  /* Testimonials end */
+
 
 
 
