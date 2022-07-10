@@ -15,14 +15,11 @@ html {
 }
 
 .header .max-container {
-  height: 90px;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   padding: 20px;
-  justify-content: center;
   align-items: center;
-  
 }
 
 .header__logo {
@@ -45,7 +42,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.header__nav__list {
+.header-nav__list {
   font-size: 1.5rem;
   height: 40px;
   color: #666666;
@@ -55,7 +52,7 @@ html {
   justify-content: space-evenly;
 }
 
-.header__nav__list__item {
+.header-nav__item {
   padding-left: 16px;
   padding-right: 16px;
   color: inherit;
@@ -65,13 +62,13 @@ html {
   
 }
 
-.header__nav__list__item:hover {
+.header-nav__item:hover {
   background-color: #2b2b2b;
   color: white;
   border-radius: 5px;
 }
 
-.header__nav__list__item a {
+.header-nav__item a {
   color: inherit;
   padding: 16px;
 }
@@ -86,7 +83,7 @@ html {
   border-radius: 5px;
   font-family: inherit;
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   cursor: pointer;
 }
 
@@ -109,22 +106,21 @@ display: flex;
   margin: 0 auto;
   background-color: #fff;
   margin-top: 100px;
-  margin-bottom: 0px;
   overflow: hidden;
   justify-content: space-around;
-  gap: 240px;
+  gap: 250px;
 
 }
 
-.future__text {
+.future-text {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin-top: 75px;
-  margin-bottom: 55px;
+  padding-top: 75px;
+  padding-bottom: 55px;
 }
 
-.future__text__logo {
+.future-text__logo {
   font-size: 3rem;
   font-weight: bolder;
   display: flex;
@@ -133,8 +129,7 @@ display: flex;
   gap: 10px;
 }
 
-.future__text__paragraph {
-  font-family: 'Poppins', sans-serif;
+.future-text__paragraph {
   font-size: 1.5rem;
   font-weight: 400;
   display: flex;
@@ -143,22 +138,19 @@ display: flex;
   padding-top: 15px;
 }
 
-.future__text__paragraph h2{
+.future-text__paragraph h2{
   font-size: 5.4rem;
   font-weight: 400;
   line-height: 6rem;
 }
-.future__text__paragraph p{
+.future-text__paragraph p{
   padding-top: 15px;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
 }
 
-.future__text__buttons {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
+.future-text__buttons {
   display: flex;
   flex-direction: row;
   justify-items: flex-start;
@@ -173,12 +165,13 @@ display: flex;
   height: 40px;
   width: 150px;
   background: #222;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   color: white;
   border-radius: 5px;
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
   cursor: pointer;
 }
 
@@ -209,8 +202,6 @@ display: flex;
   max-width: 1440px;
   display: flex;
   margin: 0 auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding-top: 100px;
   padding-bottom: 100px;
   flex-direction: column;
@@ -219,15 +210,20 @@ display: flex;
 }
 
 .features__title {
-  font-family: 'Poppins', sans-serif;
   color: white;
   display: flex;
-  margin: 0;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   max-width: 600px;
+}
+
+.features__title h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
 }
 
 .features__title p {
@@ -257,28 +253,29 @@ display: flex;
 
 }
 
-.features__card__img {
+.features__img {
   position: relative;
   top: 40px;
 }
 
-.bottom {
+.features__bottom {
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   top: -180px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 
 }
 
-.features__card__button {
+.features__button {
   width: 64px;
   height: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: -32px;
   z-index: 2;
@@ -287,18 +284,18 @@ display: flex;
   transition: all 0.8s ease;
 }
 
-.features__card__button:hover {
+.features__button:hover {
   border-radius: 50%;
   transition: 0.8s;
 }
 
-.bottom h3 {
+.features__bottom h3 {
   font-size: 2.4rem;
   font-weight: 400;
   padding-top: 48px;
 }
 
-.bottom p {
+.features__bottom p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -310,40 +307,40 @@ display: flex;
 
 }
 
-.card-1-color {
+._card-1-color {
   color: #0278ED;
 }
-.card-1-bgcolor {
+._card-1-bgcolor {
   background-color: #0278ED;
 }
-.card-2-color {
+._card-2-color {
   color: #FF5437;
 }
-.card-2-bgcolor {
+._card-2-bgcolor {
   background-color:#FF5437
 }
-.card-3-color {
+._card-3-color {
   color: #FF9209;
 }
-.card-3-bgcolor {
+._card-3-bgcolor {
   background-color:#FF9209
 }
-.card-4-color {
+._card-4-color {
   color: #E738CE;
 }
-.card-4-bgcolor {
+._card-4-bgcolor {
   background-color: #E738CE;
 }
-.card-5-color {
+._card-5-color {
   color: #00C6DF;
 }
-.card-5-bgcolor {
+._card-5-bgcolor {
   background-color: #00C6DF;
 }
-.card-6-color {
+._card-6-color {
   color: #B25DF8;
 }
-.card-6-bgcolor {
+._card-6-bgcolor {
   background-color: #B25DF8;
 }
 
