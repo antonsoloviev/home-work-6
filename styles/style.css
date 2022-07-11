@@ -3,6 +3,12 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
 /* COMMON end */
 
 /* HEADER start */
@@ -14,10 +20,7 @@ html {
   display: flex;
 }
 
-.header .max-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
+.header .container {
   padding: 20px;
   align-items: center;
 }
@@ -99,11 +102,8 @@ width: 100%;
 display: flex; 
 }
 
-.future .max-container {
-  max-width: 1440px;
+.future .container {
   max-height: 520px;
-  display: flex;
-  margin: 0 auto;
   background-color: #fff;
   margin-top: 100px;
   overflow: hidden;
@@ -198,10 +198,7 @@ display: flex;
   background-color: #222222;
 }
 
-.features .max-container {
-  max-width: 1440px;
-  display: flex;
-  margin: 0 auto;
+.features .container {
   padding-top: 100px;
   padding-bottom: 100px;
   flex-direction: column;
@@ -353,11 +350,8 @@ display: flex;
   background-color: #FF5437;
 }
 
-.statistics .max-container {
-  max-width: 1440px;
+.statistics .container {
   max-height: 316px;
-  display: flex;
-  margin: 0 auto;
   justify-content: space-around;
   padding-left: 135px;
   padding-right: 135px;
@@ -389,11 +383,8 @@ display: flex;
   background-color: #fff;
   }
   
-  .technology  .max-container {
-    max-width: 1440px;
+  .technology  .container {
     max-height: 645px;
-    display: flex;
-    margin: 0 auto;
     margin-top: 100px;
     overflow: hidden;
     justify-content: space-around;
@@ -454,10 +445,7 @@ display: flex;
     background-color: #222222;
   }
   
-  .dark-mode .max-container {
-    max-width: 1440px;
-    display: flex;
-    margin: 0 auto;
+  .dark-mode .container {
     padding-top: 100px;
     padding-bottom: 150px;
     flex-direction: column;
@@ -548,10 +536,7 @@ display: flex;
     background-color: white;
   }
   
-  .pricing .max-container {
-    max-width: 1440px;
-    display: flex;
-    margin: 0 auto;
+  .pricing .container {
     padding-top: 100px;
     padding-bottom: 150px;
     flex-direction: column;
@@ -647,10 +632,7 @@ display: flex;
     background-color: #F2F2F2;
   }
   
-  .testimonials .max-container {
-    max-width: 1440px;
-    display: flex;
-    margin: 0 auto;
+  .testimonials .container {
     padding-top: 100px;
     padding-bottom: 150px;
     flex-direction: column;
@@ -737,10 +719,7 @@ display: flex;
     background-color: white;
   }
   
-  .download .max-container {
-    max-width: 1440px;
-    display: flex;
-    margin: 0 auto;
+  .download .container {
     padding-top: 100px;
     padding-bottom: 150px;
     flex-direction: column;
@@ -794,12 +773,7 @@ display: flex;
     background-color: #F2F2F2;
   }
   
-  .faq .max-container {
-    max-width: 1440px;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  .faq .container {
     padding-top: 100px;
     padding-bottom: 100px;
     flex-direction: column;
@@ -856,12 +830,7 @@ display: flex;
     background-color: white;
   }
   
-  .footer .max-container {
-    max-width: 1440px;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  .footer .container {
     padding-top: 100px;
     padding-bottom: 150px;
     flex-direction: column;
