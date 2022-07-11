@@ -777,12 +777,7 @@ display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .faq-wrapper {
     max-width: 1200px;
-    max-height: 434px;
   }
   
   .faq__title {
@@ -793,7 +788,7 @@ display: flex;
     flex-direction: column;
   }
 
-  .faq-container {
+  .faq-text {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
