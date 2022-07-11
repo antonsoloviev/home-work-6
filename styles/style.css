@@ -41,7 +41,7 @@ html {
 
 .header__logo:hover {
   background: linear-gradient(60deg, #D140F8 33%, #788CE9 66%, #37C2DE, #1ECCAE);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -850,8 +850,7 @@ display: flex;
 } 
 .beauty-rotate:hover {
   border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .footer__social-networks {
